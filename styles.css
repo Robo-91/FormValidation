@@ -1,0 +1,30 @@
+form {
+	border-radius: 10px;
+	max-width: 450px;
+	padding: 10px;
+	margin: 50px auto auto auto;
+	box-shadow: 0 0 28px 2px #454545;
+}
+
+h1 {
+	text-align: center;
+}
+
+p > label {
+	display: block;
+}
+
+label {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+button {
+	display: block;
+	margin: 10px auto 10px auto;
+	height: 35px;
+}
+
+input:invalid {
+	box-shadow: 0 0 5px 1px red;
+}
