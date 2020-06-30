@@ -8,12 +8,39 @@ const submit = document.getElementById('submit');
 
 const validateUsername = () => {
 	if (username.validity.valueMissing) {
-		username.setCustomValidity('Please Enter a Username!');
+		username.setCustomValidity('Please enter a Username!');
+	} else {
+		username.setCustomValidity('');
 	}
-};
-	
+}
+
+const validateConfirmPassword = () => {
+	if (confirmPassword.value !== password.value) {
+		confirmPassword.setCustomValidity('Please type the same password!');
+	} else {
+		confirmPassword.setCustomValidity('');
+	}
+}
+
+const validateCountry = () => {
+	if (country.validity.valueMissing) {
+		country.setCustomValidity('Please enter your country!');
+	} else {
+		country.setCustomValidity('');
+	}
+}
+
+const validateZipCode = () => {
+	if (zipCode.validity.patternMismatch) {
+		zipCode.setCustomValidity('Zip code must follow ##### format!');
+	} else {
+		zipCode.setCustomValidity('');
+	}
+}
 
 submit.addEventListener('click', () => {
 	validateUsername();
+	validateConfirmPassword();
+	validateCountry();
+	validateZipCode();
 });
-
