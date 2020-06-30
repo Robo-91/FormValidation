@@ -8,12 +8,12 @@
 
 	<form>
 		<h1>Sign Up</h1>
-			<input type="text" id="username" name="Username" placeholder="Username" required>
+			<input type="text" id="username" name="Username" placeholder="Username" required maxlength="25">
 			<input type="Password" id="userpassword" name="" placeholder="Password" required>
-			<input type="text" id="confirm-password" name="" placeholder="Confirm Password" required>
+			<input type="Password" id="confirm-password" name="" placeholder="Confirm Password" required>
 			<input type="Email" id="user-email" name="Email"  placeholder="Email" required>
 			<input type="text" id="user-country" name="country" placeholder="Country" required>
-			<input type="number" id="zip-code" name="Zip-Code" placeholder="Zip Code" required>
+			<input type="text" id="zip-code" name="Zip-Code" placeholder="Zip Code" required pattern="[0-9]{5}">
 		<button id="submit">Submit</button>
 	</form>
 
