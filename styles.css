@@ -69,6 +69,17 @@ h1 {
 	border-radius: 10px;
 	width: 90px;
 	height: 45px;
+	color: white;
+	font-size: 18px;
+	background-color: #008CBA;
+	border: none;
+}
+
+#submit:hover {
+	background-color: #0284b0;
+	box-shadow: ;
+	transition: .5s;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 button {
