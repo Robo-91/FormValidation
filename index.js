@@ -14,6 +14,14 @@ const validateUsername = () => {
 	}
 }
 
+const validatePassword = () => {
+	if (password.validity.valueMissing) {
+		password.setCustomValidity('Please enter a new password');
+	} else {
+		password.setCustomValidity('');
+	}
+}
+
 const validateConfirmPassword = () => {
 	if (confirmPassword.value !== password.value) {
 		confirmPassword.setCustomValidity('Please type the same password!');
@@ -40,6 +48,7 @@ const validateZipCode = () => {
 
 submit.addEventListener('click', () => {
 	validateUsername();
+	validatePassword();
 	validateConfirmPassword();
 	validateCountry();
 	validateZipCode();
