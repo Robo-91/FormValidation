@@ -1,0 +1,3 @@
+To view this Page: https://robo-91.github.io/FormValidation/
+
+This project was created for learning purposes only, following along with the MDN tutorial page for form validation. Some of the learning outcomes of building this project includes using attributes from the HTML page to check validation (required and pattern attributes), as well as using Javascript to set custom messages to the user (setCustomValidity).
