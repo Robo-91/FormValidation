@@ -23,13 +23,13 @@ To-do list:
 
 ## Getting Started
    
-(include git clone command)
-(include all environment setup steps)
+Ensure that you have text editor installed (Visual Studio Code or Sublime text Editor).
 
-> https://robo-91.github.io/FormValidation/ 
+If you're using Windows, ensure that you have git bash installed.
 
-- All the `code` required to get started
-- Images of what it should look like
+Using the terminal/command prompt, navigate to the directory that you want to clone the repository to, and use the following command:
+
+> git clone https://github.com/Robo-91/FormValidation.git
 
 ## Usage
 
